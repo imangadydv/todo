@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top,#c8ece7,#85dce2);
+    background-color: rgb(127, 197, 198);
+    padding: 10px;
+}
+.to_doapp{
+    width: 100%;
+    max-width: 550px;
+    background: #ffffff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #05edda;
+}
+h2{
+    color:#05edda;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    position:relative;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    outline-offset: 5px;
+    border-radius: 30px;
+  
+     box-shadow: 0 0 10px #05edda;
+}
+input{
+    flex:1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #05edda;
+    
+    background: transparent;
+    font-weight: 600;
+    padding:10px;
+}
+.row input::placeholder
+{
+    color: #05edda;
+}
+.row button{
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    background-color: #05edda;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 30px;
+    margin:1px;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #05edda;
+    letter-spacing: 1px;
+    padding: 6px 6px 13px 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-block: 10px;
+   outline-style: groove;
+   outline-color: #05edda;
+   border-radius: 21px;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: url(images/uncheckicon.png);
+    background-size: cover; 
+    top: 5px;
+    left:5px;
+}
+ul li.checked{
+    box-shadow:0 0 10px #54cac0;
+    color: #05edda;
+    border-radius: 50px;
+
+}
+ul li.checked::before{
+   background: url(images/checkicon.png);
+   background-size: cover;
+   background-color: #05edda;
+}
+ul li span{
+    position:absolute;
+    top:1px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;;
+}
+us li span:hover{
+    color: #68dbc4;
+    background: #05edda;
+}

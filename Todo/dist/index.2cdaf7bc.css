@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: #7fc5c6 linear-gradient(to top, #c8ece7, #85dce2);
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.to_doapp {
+  background: #fff;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 550px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  box-shadow: 0 0 30px #05edda;
+}
+
+h2 {
+  color: #05edda;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+  display: flex;
+  position: relative;
+}
+
+.row {
+  outline-offset: 5px;
+  border-radius: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+  box-shadow: 0 0 10px #05edda;
+}
+
+input {
+  color: #05edda;
+  background: none;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.row input::placeholder {
+  color: #05edda;
+}
+
+.row button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #05edda;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  margin: 1px;
+  padding: 8px 15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+ul li {
+  color: #05edda;
+  letter-spacing: 1px;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 21px;
+  outline-style: groove;
+  outline-color: #05edda;
+  margin-block: 10px;
+  padding: 6px 6px 13px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  list-style: none;
+  position: relative;
+}
+
+ul li:before {
+  content: "";
+  background: url("uncheckicon.37c62420.png") 0 0 / cover;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+ul li.checked {
+  color: #05edda;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #54cac0;
+}
+
+ul li.checked:before {
+  background: #05edda url("checkicon.97dc1cc0.png") 0 0 / cover;
+}
+
+ul li span {
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 1px;
+  right: 10px;
+}
+
+us li span:hover {
+  color: #68dbc4;
+  background: #05edda;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
